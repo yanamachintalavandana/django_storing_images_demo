@@ -1,0 +1,25 @@
+{%extends "base.html"%}
+{%block content%}
+<html>
+<div class="container">
+<table width=100% border=0>
+
+{% for i in x %}
+<td>
+Name: {{i.name}}<br>
+<img src="{{i.photo.url}}" alt='shirts photos na' width=200 height=200/>
+</td>
+<td>
+<h4>Product details: </h4><br>
+price: {{i.price}}<br>
+Stock: {{i.stock}}<br>
+available: {% if i.available %}Yes {%else%}No{%endif%}<br>
+Description: {{i.description}}<br>
+Created on: {{i.created}} <br>
+<a href='Kart{{i.id}}'>Click to add to my Kart</a><br>
+</td>
+</tr>
+{% endfor %}
+</div>
+</html>
+{%endblock%}
