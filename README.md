@@ -1,0 +1,1 @@
+# django_storing_images_demo
