@@ -121,10 +121,3 @@ USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
-
-# for gmail or google apps
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'madhuraymeenakshi@gmail.com'
-EMAIL_HOST_PASSWORD='ARUNACHALASIVA'
-EMAIL_USE_TLS= True
-EMAIL_PORT=587
